@@ -1,0 +1,167 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establecer altura mínima del viewport */
+}
+
+/* Estilo para el texto centrado */
+.centered-text {
+    text-align: center;
+}
+
+/* Estilo para la tabla oculta de descargas */
+.downloads-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.downloads-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para los botones de descarga en la tabla */
+.download-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* Fondo negro para los botones */
+    color: #fff; /* Color de texto blanco para los botones */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button a:hover {
+    background-color: #333; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Estilo para el slider de noticias */
+.news-slider {
+    width: 70%; /* Ancho del 70% de la página */
+    margin: 0 auto; /* Centrar horizontalmente en la página */
+    overflow: hidden;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: relative; /* Añadir posición relativa */
+    white-space: nowrap; /* Evitar saltos de línea en los elementos hijos */
+    overflow-x: hidden; /* Ocultar desbordamiento horizontal */
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+/* Botones de navegación */
+.prev-button,
+.next-button {
+    background-color: #007bff; /* Color de fondo para los botones */
+    color: #fff; /* Color del texto en los botones */
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Borde redondeado para los botones */
+    position: absolute; /* Añadir posición absoluta */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    z-index: 1; /* Colocar los botones por encima del contenido */
+}
+
+.prev-button {
+    left: 0; /* Alinear el botón "Anterior" a la izquierda */
+}
+
+.next-button {
+    right: 0; /* Alinear el botón de siguiente a la derecha */
+}
+
+/* Estilo para el contenido de los slides */
+.slides-container {
+    display: flex;
+    flex-direction: row; /* Mostrar los slides en una fila horizontal */
+    transition: transform 0.3s ease; /* Agregar transición de desplazamiento */
+}
+
+.slide {
+    min-width: 100%; /* Ancho mínimo igual al contenido de cada slide */
+    padding: 10px;
+    box-sizing: border-box;
+    white-space: normal; /* Restaurar saltos de línea en los elementos hijos */
+    overflow: hidden; /* Ocultar desbordamiento del contenido de cada slide */
+}
+
+/* Estilo para el enlace "Leer Más" */
+.read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff; /* Color de enlace azul */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #0074D9; /* Fondo azul */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Estilo para el botón de descarga */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Color azul más oscuro */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #00409f; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para las secciones */
+.other-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Empujar el pie de página hacia abajo */
+}
+
+/* Estilo para los enlaces del menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
